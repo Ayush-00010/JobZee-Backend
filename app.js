@@ -14,7 +14,7 @@ config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: '*',
+    origin: [process.env.FRONTEND_URL,'https://job-zee-frontend-qa20k31f9-ayush-00010s-projects.vercel.app'],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
