@@ -14,7 +14,7 @@ config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: [process.env.FRONTEND_URL,'https://job-zee-frontend-sigma.vercel.app'],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
